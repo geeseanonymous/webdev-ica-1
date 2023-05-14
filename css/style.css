@@ -169,6 +169,11 @@ body {
     background-size: cover;
 }
 
+.shun-big {
+    background-image: url(media/images/shun-big.jpeg);
+    background-size: cover;
+}
+
 .koharu-slide {
     background-image: url(media/images/koharu-slide.jpg);
     background-size: cover;
@@ -266,6 +271,7 @@ button[type=submit] {
 
 .navbar {
     padding: 0;
+    background-color: #36517c;
 }
 
 .nav-link {
@@ -289,6 +295,38 @@ button[type=submit] {
 }
 
 
+
+.flipcard {
+    display: grid;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+
+.flipcard-container:hover .flipcard {
+    transform: rotateY(180deg);
+}
+
+.flipcard-container {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.flipcard-front, .flipcard-back {
+    background-color: white;
+    width: 100%; 
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 1px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flipcard-back {
+    transform: rotateY(180deg);
+}
 
 
 
