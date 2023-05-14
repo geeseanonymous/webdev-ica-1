@@ -1,0 +1,340 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+  /* GLOBAL STYLES
+  --------------------------------------------- */
+  /* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+}
+
+
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------- */
+
+  /* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+
+  /* MARKETING CONTENT
+-------------------------------------------------- */
+
+  /* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+
+  /* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+
+  /* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+
+/* Bump up size of carousel content */
+.carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+/* fuck me in the ass */
+
+.navbar {
+    background-color: #4a4a4a;
+}
+
+.parallax {
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----------------------- images ---------------------------- */
+
+.me {
+    background-image: url(media/images/tze-kang.jpg);
+    background-size: cover;
+}
+
+.texas {
+    background-image: url(media/images/texas.jpg);
+    background-size: cover;
+}
+
+.lappland {
+    background-image: url(media/images/lappland.jpg);
+    background-size: cover;
+}
+
+.rein-texas {
+    background-image: url(media/images/rein-texas.jpg);
+    background-size: cover;
+}
+
+.texas-gaze {
+    background-image: url(media/images/texas-gaze.jpg);
+    background-size: cover;
+}
+
+.miku-water {
+    background-image: url(media/images/miku-water.jpg);
+    background-size: cover;
+}
+
+.shun-slide {
+    background-image: url(media/images/shun-header.jpg);
+    background-size: cover;
+}
+
+.shun-pfp {
+    background-image: url(media/images/shun-small.jpeg);
+    background-size: cover;
+}
+
+.koharu-slide {
+    background-image: url(media/images/koharu-slide.jpg);
+    background-size: cover;
+}
+
+.koharu {
+    background-image: url(media/images/koharu.jpg);
+    background-size: cover;
+}
+
+/* ------------------------- end images ---------------------------- */
+
+h1 {
+    font-size: 500%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, .3);
+    left: 0;
+    right: 20%;
+    padding-left: 15%;
+}
+
+.index-caption {
+    left: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.col-lg-4 {
+    width: 50%;
+    min-width: 250px;
+}
+
+.index-heading {
+    width: 100%;
+}
+
+.contact-form {  
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+.message-label {
+    width: 50%;
+}
+
+.message-textarea {
+    height: 10rem;
+}
+
+.required-field::after {
+    content: "*";
+    color: red;
+}
+
+.dropdown {
+    height: 100%;
+}
+
+.dropdown-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.dropdown-item {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.dropdown-item:hover {
+    background-color: #d1d1d1;
+}
+
+button.btn {
+    color: rgba(255, 255, 255, .55);
+    height: 100%;
+}
+
+button.btn:hover {
+    color: rgba(255, 255, 255, .9);
+}
+
+button[type=submit] {
+    color: #fff;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.nav-link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, .9);
+}
+
+.row {
+    justify-content: center;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.question-box .section {
+    width: 450px;
+    padding: 0 1rem;
+  }
+  .question-box .section .title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+  .question-box .section div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #5dbffc2a;
+    border: 2px solid #005eff19;
+    margin: 7px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
