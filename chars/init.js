@@ -45,7 +45,7 @@ function init() {
     footer.innerHTML = `
     <p>idk i dont have copyright on this</p>
             
-    <a target="_blank" href="https://www.instagram.com/qeratey"><img class="social-media" src="css/media/images/ig-icon.png" width="30"></a>
+    <a target="_blank" href="https://www.instagram.com/qeratey"><img class="social-media" src="../css/media/images/ig-icon.png" width="30"></a>
     `
 
 
