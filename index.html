@@ -1,4 +1,4 @@
-<!doctype html>
+  <!doctype html>
 <html lang="en">
 
 <head>
@@ -18,6 +18,7 @@
     crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="css/style.css">
+  <script src="init.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">what am i doing</a>
+        <a class="navbar-brand" href="index.html">gay archive</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,17 +43,17 @@
               <div class="dropdown">
                 <a class="nav-link" aria-current="page" href="chars.html">things</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="cunny/shun.html">shun</a>
-                  <a class="dropdown-item" href="cunny/koharu.html">koharu</a>
+                  <a class="dropdown-item" href="chars/shun.html">shun</a>
+                  <a class="dropdown-item" href="chars/koharu.html">koharu</a>
                 </div>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="noskill.html">game</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+          <form class="d-flex" method="get" action="search.html">
+            <input name="query" class="form-control mr-2" type="search" placeholder="Search for a character!" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
@@ -74,18 +75,18 @@
           <div class="container">
             <div class="index-caption carousel-caption text-left">
               <h1>this is texas</h1>
-              <p>she is not from blue archive but i must include kyran's wife</p>
-              <p><a class="btn btn-lg btn-primary" href="about.html" role="button">see other stuff</a></p>
+              <p>kyran's wife</p>
+              <p><a class="btn btn-lg btn-primary" href="chars.html" role="button">see other stuff</a></p>
             </div>
           </div>
         </div>
 
-        <div class="carousel-item rein-texas">
+        <div class="carousel-item parallax koharu-index">
           <div class="container">
             <div class="index-caption carousel-caption">
               <h1>koharu !!!</h1>
               <p>my beloved</p>
-              <p><a class="btn btn-lg btn-primary" href="cunny/koharu.html" role="button">Learn more</a></p>
+              <p><a class="btn btn-lg btn-primary" href="chars/koharu.html" role="button">see</a></p>
             </div>
           </div>
         </div>
@@ -94,8 +95,8 @@
           <div class="container">
             <div class="index-caption carousel-caption text-right">
               <h1>3 legal characters</h1>
-              <p>cunny archive</p>
-              <p><a class="btn btn-lg btn-primary" href="about.html" role="button">Browse gallery</a></p>
+              <p>that's why its called cunny archive</p>
+              <p><a class="btn btn-lg btn-primary" href="about.html" role="button">what is this?</a></p>
             </div>
           </div>
         </div>
@@ -120,13 +121,9 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4 index-heading">
-          <svg class="bd-placeholder-img rounded-circle me" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-            <title>Placeholder</title>
-          </svg>
-
+          <img class="rounded-circle" src="css/media/images/tze-kang.jpg" alt="tze kang" title="tze kang" width="140" height="140">
           <h2>me</h2>
-          <p>i made this about cunny archive because ethan told me to</p>
+          <p>hello im tze kang and this is a goofy website i made for an assignment</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -138,8 +135,9 @@
 
     <!-- FOOTER -->
     <footer class="container">
-        <p>i hate webdev so much</p>
+        <p>idk i dont have copyright on this</p>
         
+        <a target="_blank" href="https://www.instagram.com/qeratey"><img class="social-media" src="css/media/images/ig-icon.png" width="30"></a>
     </footer>
   </main>
 

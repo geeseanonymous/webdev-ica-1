@@ -174,6 +174,11 @@ body {
     background-size: cover;
 }
 
+.koharu-index {
+    background-image: url(media/images/koharu-index.png);
+    background-size: cover;
+}
+
 .koharu-slide {
     background-image: url(media/images/koharu-slide.jpg);
     background-size: cover;
@@ -184,10 +189,15 @@ body {
     background-size: cover;
 }
 
+.shiroko-header {
+    background-image: url(media/images/shiroko-header.jpeg);
+    background-size: cover;
+}
+
 /* ------------------------- end images ---------------------------- */
 
 h1 {
-    font-size: 500%;
+    font-size: 400%;
 }
 
 .carousel-caption {
@@ -211,6 +221,19 @@ h1 {
 .index-heading {
     width: 100%;
 }
+
+.social-media {
+    transition: 1s;
+}
+
+.social-media:hover {
+    transform: scale(1.2);
+    transition: 1s;
+
+}
+
+
+/* --------------------------------- form css ------------------------------ */
 
 .contact-form {  
     padding-left: 4.5rem;
@@ -237,6 +260,8 @@ h1 {
     content: "*";
     color: red;
 }
+
+/* ------------------------------------- end form --------------------------------------- */
 
 .dropdown {
     height: 100%;
@@ -295,13 +320,13 @@ button[type=submit] {
 }
 
 
+/* ------------------------------- flipcard for shun ----------------------------- */
 
 .flipcard {
     display: grid;
     transition: transform 0.5s;
     transform-style: preserve-3d;
 }
-
 
 .flipcard-container:hover .flipcard {
     transform: rotateY(180deg);
@@ -328,51 +353,127 @@ button[type=submit] {
     transform: rotateY(180deg);
 }
 
+/* --------------------------- end flipcard ----------------------------------- */
 
 
 
 
+/* ------------------------------- schedule table ---------------------------------- */
+
+.schedule {
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+}
+
+tr:nth-child(even) {
+    background: #dfecff;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+.closed {
+    background-color: #ff6b6b;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.question-box .section {
-    width: 450px;
-    padding: 0 1rem;
-  }
-  .question-box .section .title {
-    font-weight: 600;
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-    margin-bottom: 1rem;
-  }
-  .question-box .section div {
-    position: relative;
-    display: flex;
-    align-items: center;
+.slidecontainer {
     width: 100%;
-    background: #5dbffc2a;
-    border: 2px solid #005eff19;
-    margin: 7px 0;
-    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.slidecontainer p {
+    text-align: center;
+}
+
+.slider {
+    display: block;
+    margin: auto;
+    opacity: 0.7;
+    background: grey;
+}
+
+.slider:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
+#character-info, #character-image {
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+}
+
+#character-image {
+    float: right;
+}
+
+
+
+#scorep, #score {
+    text-align: center;
+}
+
+.memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: auto;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    padding: 20px;
+    position: absolute;
     border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
+    background: #1C7CCC;
+    backface-visibility: hidden;
+    padding-top: calc((203.317px - 110px)/2);
+    padding-bottom: calc((203.317px - 110px)/2);
+}
+
+.back-face {
+    height: 100%;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+

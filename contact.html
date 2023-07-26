@@ -18,46 +18,12 @@
     crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="css/style.css">
+  <script src="init.js"></script>
 </head>
 
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">what am i doing</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto mb-2 mb-md-0">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <a class="nav-link" aria-current="page" href="chars.html">things</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="cunny/shun.html">shun</a>
-                  <a class="dropdown-item" href="cunny/koharu.html">koharu</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
   </header>
   
   <main>
@@ -75,15 +41,53 @@
       </div>
     </div>
 
+    <div class="schedule">
+        <table id="schedule" border="3">
+            <tr>
+                <td colspan=2> our schedule</td>
+            </tr>
+            <tr>
+                <td>monday</td>
+                <td>1-4pm</td>
+            </tr>
+            <tr>
+                <td>tuesday</td>
+                <td>1-4pm</td>
+            </tr>
+            <tr>
+                <td>wednesday</td>
+                <td class="closed">closed !!</td>
+            </tr>
+            <tr>
+                <td>thursday</td>
+                <td class="closed">closed !!</td>
+            </tr>
+            <tr>
+                <td>friday</td>
+                <td class="closed">closed !!</td>
+            </tr>
+            <tr>
+                <td>saturday</td>
+                <td class="closed">closed !!</td>
+            </tr>
+            <tr>
+                <td>sunday</td>
+                <td class="closed">closed !!</td>
+            </tr>
+        </table>
+    </div>
+
+    <br>    
+
     <!-- form !! -->
     <form class="contact-form" method="post" action="contact-success.php">
         <div class="form-group">
-            <label for="name">Name</label>
-            <input name="name" id="name" type="text" class="form-control" placeholder="Enter name">
+            <label class="required-field" for="name">Name</label>
+            <input required name="name" id="name" type="text" class="form-control" placeholder="Enter name">
         </div>
 
         <div class="form-group">
-            <label for="email">Email address</label>
+            <label class="required-field" for="email">Email address</label>
             <input required name="email" id="email" type="email" class="form-control" placeholder="Enter email">
         </div>
 
@@ -94,8 +98,8 @@
 
 
         <div class="form-group">
-          <label for="msg" class="message-label">Message</label>
-          <textarea name="msg" id="msg" class="form-control message-textarea" placeholder="Your message here"></textarea>
+          <label class="required-field" for="msg" class="message-label">Message</label>
+          <textarea required name="msg" id="msg" class="form-control message-textarea" placeholder="Your message here"></textarea>
       </div>
 
       <div class="form-group form-check">
@@ -114,9 +118,8 @@
 
     <!-- FOOTER -->
     <footer class="container">
-        <p>uohhhhhhhhhh</p>
-        
     </footer>
+    
   </main>
 
 
