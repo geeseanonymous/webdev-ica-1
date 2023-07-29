@@ -232,6 +232,19 @@ h1 {
 
 }
 
+.reveal {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.reveal.active {
+    transform: translateX(0);
+
+}
+
+
+
+
 
 /* --------------------------------- form css ------------------------------ */
 
@@ -318,6 +331,7 @@ button[type=submit] {
     border-radius: 0;
     border: 0;
 }
+
 
 
 /* ------------------------------- flipcard for shun ----------------------------- */
