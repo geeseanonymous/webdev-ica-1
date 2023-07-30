@@ -28,7 +28,14 @@ function init() {
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="../noskill.html">game</a>
+            <div class="dropdown">
+            <a class="nav-link" aria-current="page">Games</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="../memory.html">Memory</a>
+                <a class="dropdown-item" href="../snake.html">Snake</a>
+                <a class="dropdown-item" href="../typing.html">Typing</a>
+            </div>
+            </div>
         </li>
         </ul>
         <form class="d-flex" method="get" action="../search.html">
