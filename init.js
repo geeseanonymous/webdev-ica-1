@@ -20,15 +20,22 @@ function init() {
         </li>
         <li class="nav-item">
             <div class="dropdown">
-            <a class="nav-link" aria-current="page" href="chars.html">things</a>
+            <a class="nav-link" aria-current="page" href="chars.html">Things</a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="chars/shun.html">shun</a>
-                <a class="dropdown-item" href="chars/koharu.html">koharu</a>
+                <a class="dropdown-item" href="chars/shun.html">Shun</a>
+                <a class="dropdown-item" href="chars/koharu.html">Koharu</a>
             </div>
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="noskill.html">game</a>
+            <div class="dropdown">
+            <a class="nav-link" aria-current="page" href="chars.html">Games</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="memory.html">Memory</a>
+                <a class="dropdown-item" href="snake.html">Snake</a>
+                <a class="dropdown-item" href="typing.html">Typing</a>
+            </div>
+            </div>
         </li>
         </ul>
         <form class="d-flex" method="get" action="search.html">
@@ -52,6 +59,6 @@ function init() {
 
 }
 
-window.onload = init;
+window.addEventListener('load', init);
 
 
