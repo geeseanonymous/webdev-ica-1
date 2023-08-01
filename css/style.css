@@ -395,9 +395,14 @@ th, td {
 }
 
 
+#character-image, #character-info {
+    margin-left: 4.5em;
+    margin-right: 4.5em;
+}
 
-
-
+#character-image {
+    float: right;
+}
 
 
 
